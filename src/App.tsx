@@ -1,4 +1,5 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -13,8 +14,11 @@ function App() {
 
   return (
     <div>
-      {/* <ListGroup items={items} heading="List" onSelectItem={handleSelectItem} /> */}
+      <ListGroup items={items} heading="List" onSelectItem={handleSelectItem} />
       <Alert>Html Content</Alert>
+      <Button color="secondary" onClick={() => console.log("Skk")}>
+        My Button
+      </Button>
     </div>
   );
 }
